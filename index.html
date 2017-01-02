@@ -38,8 +38,8 @@
     <script>
       $.getJSON( "quotes.json", function( data ) {
         randomIndex = Math.floor(Math.random() * data.length)
-        $("p.lead").text(data[randomIndex].phrase);
-        $("h1.cover-heading").text(data[randomIndex].signature);
+        $("p.lead").text(data[randomIndex].signature);
+        $("h1.cover-heading").text(data[randomIndex].phrase);
       });
     </script>
     
@@ -58,8 +58,8 @@
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">Unknown</h1>
-            <p class="lead"></p>
+            <h1 class="cover-heading"></h1>
+            <p class="lead">Unknown</p>
           </div>
 
           <div class="mastfoot">
